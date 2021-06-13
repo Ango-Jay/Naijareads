@@ -1,7 +1,7 @@
 {
-  "name": "naijareads",
+  "name": "addendum",
   "version": "1.0.0",
-  "description": "Goodreads clone",
+  "description": "Allows me to commit",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
