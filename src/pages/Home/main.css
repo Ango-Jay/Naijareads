@@ -7,3 +7,15 @@
 .text-enlarge {
   font-size: 3rem;
 }
+.nav-color {
+  background-color: #f4f2e9;
+}
+
+.nav-text-color {
+  color: #a37847;
+}
+.bookgallery-bg {
+  background-color: #f4f2e9;
+  border: 2px solid #f4f2e9;
+  border-radius: 10px 10px;
+}

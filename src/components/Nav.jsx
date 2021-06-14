@@ -21,8 +21,8 @@ const NavBar = (props) => {
 
   return (
     <div>
-      <Navbar color="light" light expand="md">
-        <NavbarBrand href="/" className="mr-auto">
+      <Navbar className="nav-color" expand="md">
+        <NavbarBrand href="/" className="ml-5  nav-text-color">
           <span className="text-lighten text-enlarge">naija</span>
           <span className="text-bold text-enlarge">reads</span>
         </NavbarBrand>
