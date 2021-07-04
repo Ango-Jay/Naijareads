@@ -19,3 +19,19 @@
   border: 2px solid #f4f2e9;
   border-radius: 10px 10px;
 }
+.footergallery-bg {
+  background-color: #f4f2e9;
+}
+.footer_text {
+  color: #767676;
+}
+.footer_icons {
+  font-size: 1.5rem;
+  color: #767676;
+}
+.footer_links:hover {
+  color: rgb(37, 0, 0);
+}
+.footer_links {
+  color: rgb(37, 0, 0);
+}

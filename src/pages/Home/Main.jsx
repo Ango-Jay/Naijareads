@@ -5,6 +5,7 @@ import NavBar from "../../components/Nav";
 import "./main.css";
 import { ReactComponent as Banner } from "../../assets/image2vector.svg";
 import BookGallery from "../../components/BookGallery";
+import Footer from "../../components/Footer";
 
 class Main extends React.Component {
   render() {
@@ -35,7 +36,9 @@ class Main extends React.Component {
               <BookGallery sm={{ size: 6, order: 2, offset: 1 }} />
             </Col>
           </Row>
+     
         </Container>
+      <Footer/> 
       </React.Fragment>
     );
   }
