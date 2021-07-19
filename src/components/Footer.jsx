@@ -4,80 +4,112 @@ import {
   FaFacebook,
   FaTwitter,
   FaInstagram,
-  FaLinkedinIn
+  FaLinkedinIn,
+  FaRegCopyright
 } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import google_play from "../../public/assets/google_play.png";
+import apple_play from "../../public/assets/apple_play.svg";
 
 const Footer = () => {
   return (
-    <Container className="footergallery-bg">
-      <Row>
-        <Col>
-          <h5 className="footer_text">COMPANY</h5>
-          <List type="unstyled">
-            <a href="#" className="footer_links">
-              {" "}
-              <li>About us</li>{" "}
-            </a>
-            <a href="#" className="footer_links">
-              {" "}
-              <li>Careers</li>{" "}
-            </a>
-            <a href="#" className="footer_links">
-              {" "}
-              <li>Terms</li>{" "}
-            </a>
-            <a href="#" className="footer_links">
-              {" "}
-              <li>Privacy</li>{" "}
-            </a>
-            <a href="#" className="footer_links">
-              {" "}
-              <li>Interest Based Ads</li>{" "}
-            </a>
-            <a href="#" className="footer_links">
-              {" "}
-              <li>Ads Preferences</li>{" "}
-            </a>
-            <a href="#" className="footer_links">
-              {" "}
-              <li>Help</li>{" "}
-            </a>
-          </List>
-        </Col>
-        <Col>
-          <h5 className="footer_text">WORK WITH US</h5>
-          <List type="unstyled">
-            <a href="#" className="footer_links">
-              {" "}
-              <li>Authors</li>
-            </a>
-            <a href="#" className="footer_links">
-              {" "}
-              <li>Advertise</li>
-            </a>
-            <a href="#" className="footer_links">
-              {" "}
-              <li>Authors and ads bloc</li>
-            </a>
-            <a href="#" className="footer_links">
-              {" "}
-              <li>API</li>
-            </a>
-          </List>
-        </Col>
-        <Col>
-          <h5 className="footer_text">CONNECT</h5>
-          <IconContext.Provider value={{ className: "footer_icons" }}>
-            <FaFacebook className="mx-1" />
-            <FaTwitter className="mx-1" />
-            <FaInstagram className="mx-1" />
-            <FaLinkedinIn className="mx-1" />
-          </IconContext.Provider>
-        </Col>
-      </Row>
-      <p>2021 Goodreads, Inc. Desktop version</p>
-    </Container>
+    <div className="footergallery-bg">
+      <Container>
+        <Row>
+          <Col className="ml-auto" xs="3">
+            <h5 className="footer_text">COMPANY</h5>
+            <List type="unstyled">
+              <a href="#" className="footer_links">
+                {" "}
+                <li>About us</li>{" "}
+              </a>
+              <a href="#" className="footer_links">
+                {" "}
+                <li>Careers</li>{" "}
+              </a>
+              <a href="#" className="footer_links">
+                {" "}
+                <li>Terms</li>{" "}
+              </a>
+              <a href="#" className="footer_links">
+                {" "}
+                <li>Privacy</li>{" "}
+              </a>
+              <a href="#" className="footer_links">
+                {" "}
+                <li>Interest Based Ads</li>{" "}
+              </a>
+              <a href="#" className="footer_links">
+                {" "}
+                <li>Ads Preferences</li>{" "}
+              </a>
+              <a href="#" className="footer_links">
+                {" "}
+                <li>Help</li>{" "}
+              </a>
+            </List>
+          </Col>
+          <Col className="ml-auto" xs="3">
+            <h5 className="footer_text">WORK WITH US</h5>
+            <List type="unstyled">
+              <a href="#" className="footer_links">
+                {" "}
+                <li>Authors</li>
+              </a>
+              <a href="#" className="footer_links">
+                {" "}
+                <li>Advertise</li>
+              </a>
+              <a href="#" className="footer_links">
+                {" "}
+                <li>Authors and ads bloc</li>
+              </a>
+              <a href="#" className="footer_links">
+                {" "}
+                <li>API</li>
+              </a>
+            </List>
+          </Col>
+          <Col className="ml-auto" xs="3">
+            <h5 className="footer_text">CONNECT</h5>
+            <IconContext.Provider value={{ className: "footer_icons" }}>
+              <FaFacebook className="mx-1" />
+              <FaTwitter className="mx-1" />
+              <FaInstagram className="mx-1" />
+              <FaLinkedinIn className="mx-1" />
+            </IconContext.Provider>
+          </Col>
+          <Col xs="3" className="mr-auto">
+            <Container>
+              <Row>
+                <Col xs="6">
+                  {" "}
+                  <img
+                    role="button"
+                    className=" mx-2"
+                    src={google_play}
+                    alt="google_play"
+                  />
+                </Col>
+                <Col xs="6">
+                  <img
+                    role="button"
+                    className=" mx-2"
+                    src={apple_play}
+                    alt="apple_store"
+                  />
+                </Col>
+
+                <p className="text-center">
+                  <FaRegCopyright className="mx-1" />
+                  2021 Goodreads, Inc. Desktop version
+                </p>
+              </Row>
+            </Container>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 };
 
