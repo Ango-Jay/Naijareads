@@ -1,18 +1,21 @@
-import React from "react";
+import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import { Container, Col, Row } from "reactstrap";
 import NavBar from "../../components/Nav";
 import "./main.css";
-import { ReactComponent as Banner } from "../../assets/image2vector.svg";
 import BookGallery from "../../components/BookGallery";
 import Footer from "../../components/Footer";
+import SignUpBox from "../../components/SignUpBox";
 
-class Main extends React.Component {
+class Main extends Component {
   render() {
     return (
       <React.Fragment>
         <NavBar />
-        <Banner />
+        <SignUpBox />
+
+        <div role="img" className="banner_bg position-relative"></div>
+
         <Container>
           <Row>
             <Col>
@@ -36,9 +39,8 @@ class Main extends React.Component {
               <BookGallery sm={{ size: 6, order: 2, offset: 1 }} />
             </Col>
           </Row>
-     
         </Container>
-      <Footer/> 
+        <Footer className="pt-3 mt-5" />
       </React.Fragment>
     );
   }

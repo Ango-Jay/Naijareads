@@ -5,33 +5,25 @@ import arrow from "../../public/assets/gr_arow.png";
 
 const BookGallery = () => {
   return (
-    <Container className="bookgallery-bg">
-      <Row>
-        <Col>
-          <Container>
-            <h5>What will you discover?</h5>
-            <p>Because Brian liked:</p>
-            <Row>
-              <Col>
-                <img className="m-2" src={book} alt="test book" />
-                <img className="m-2" src={book} alt="test book" />
-                <img className="m-2" src={book} alt="test book" />
-                <img className="m-2" src={book} alt="test book" />
-              </Col>
-              <Col>
-                <img className="m-2" src={arrow} alt="arrow" />
-              </Col>
-              <p>he discovered</p>
-              <Col>
-                <img className="m-2" src={book} alt="test book" />
-              </Col>
-
-              <p>Because Jane liked:</p>
-            </Row>
-          </Container>
-        </Col>
-      </Row>
-    </Container>
+    <div className="bookgallery-bg">
+      <h5>What will you discover?</h5>
+      <div classname="source-book-gall">
+        <p className="book-gall-text">Because Brian liked...</p>
+        <img className="sbook-gall-img" src={book} alt="test book" />
+        <img className="sbook-gall-img" src={book} alt="test book" />
+        <img className=" sbook-gall-img" src={book} alt="test book" />
+        <img className=" sbook-gall-img" src={book} alt="test book" />{" "}
+      </div>
+      <div className="float-right ">
+        <img className="mr-1 " src={arrow} alt="arrow" />
+      </div>
+      <div className="result-book-img float-right">
+        <p className=" book-gall-text ">he discovered:</p>
+        <p className="float-right">Historical Fiction, Book Club</p>
+        <img className="rbook-gall-img" src={book} alt="test book" />
+        <canvas className="canvas"></canvas>
+      </div>
+    </div>
   );
 };
 

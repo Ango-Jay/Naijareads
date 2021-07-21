@@ -18,7 +18,20 @@
   background-color: #f4f2e9;
   border: 2px solid #f4f2e9;
   border-radius: 10px 10px;
+  word-wrap: break-word;
 }
+.banner_bg {
+  background-image: url(/assets/image2vector.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cccccc;
+  padding: 120px;
+}
+
+.font_small {
+  font-size: 12px;
+}
+
 .footergallery-bg {
   background-color: #f4f2e9;
 }
@@ -34,4 +47,59 @@
 }
 .footer_links {
   color: rgb(37, 0, 0);
+}
+.padding {
+  margin-top: 2rem;
+  margin-right: 2rem;
+  padding: 24px;
+  width: 300px;
+  height: auto;
+  z-index: 1000;
+  position: sticky;
+  float: right;
+  background-color: white;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px 10px;
+}
+
+.book-gall-text {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.sbook-gall-img {
+  float: left;
+  margin-right: 1rem;
+  height: 120px;
+}
+.source-book-gall {
+  background-image: url(/assets/gr_bg.png);
+  clear: both;
+  margin-top: 20px;
+  height: 170px;
+  background-position: bottom;
+  background-repeat: repeat-x;
+  float: left;
+  margin-left: 1rem;
+}
+.rbook-gall-img {
+  height: 120px;
+  margin-left: 1rem;
+}
+.canvas {
+  width: 80;
+  height: 15;
+  display: block;
+  border: 0;
+}
+.result-book-img {
+  width: 200px;
+  float: right;
+  overflow: hidden;
+  margin-right: 10px;
 }
