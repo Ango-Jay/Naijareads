@@ -8,18 +8,20 @@ const SignUpIn = () => {
       <Row>
         <Col>
           <h5 className="font-bold text-center">Discover and read more</h5>
-          <Button className="text-center m-2">
-            <FaFacebookSquare className="mx-1 " />
+          <Button className="text-center my-2 fb-button">
+            <FaFacebookSquare className="mx-1 text-center" />
             Continue with Facebook
           </Button>
-          <Button className="text-center m-2">
-            <FaAmazon className="mx-1 " /> Continue with Amazon
+          <Button className="text-center my-2  am-button">
+            <FaAmazon className="mx-1 text-center" /> Continue with Amazon
           </Button>
-          <Button outline className="text-center m-2">
-            <FaApple className="mx-1 " />
+          <Button outline className="text-center my-2 ap-button">
+            <FaApple className="mx-1 text-center" />
             Continue with Apple
           </Button>
-          <Button className="text-center m-2">Sign up wtih E-mail</Button>
+          <Button className="text-center my-2 em-button">
+            Sign up wtih E-mail
+          </Button>
           <p className="font_small text-center m-1">
             By creating an account, you agree to the Goodreads Terms of Service
             and Privacy Policy.
