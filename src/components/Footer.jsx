@@ -13,7 +13,7 @@ import apple_play from "../../public/assets/apple_play.svg";
 
 const Footer = () => {
   return (
-    <div className="footergallery-bg pt-4 mt-4">
+    <div className="footergallery-bg footer_padding">
       <Container>
         <Row>
           <Col className="ml-auto" xs="3">

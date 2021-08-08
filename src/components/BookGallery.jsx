@@ -5,7 +5,7 @@ import arrow from "../../public/assets/gr_arow.png";
 
 const BookGallery = () => {
   return (
-    <Container sm={{ size: 6, order: 2, offset: 1 }}>
+    <Container>
       <Row>
         <Col>
           <div className="bookgallery-bg">
@@ -21,12 +21,12 @@ const BookGallery = () => {
                 alt="test book"
               />{" "}
             </div>
-            <div className="float-right ">
-              <img className="mr-1 " src={arrow} alt="arrow" />
+            <div>
+              <img src={arrow} alt="arrow" />
             </div>
-            <div className="result-book-img float-right">
+            <div className="result-book-img">
               <p className=" book-gall-text ">he discovered:</p>
-              <p className="float-right">Historical Fiction, Book Club</p>
+              <p>Historical Fiction, Book Club</p>
               <img className="rbook-gall-img" src={book} alt="test book" />
               <canvas className="canvas"></canvas>
             </div>

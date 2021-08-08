@@ -4,25 +4,23 @@ import { FaAmazon, FaFacebookSquare, FaApple } from "react-icons/fa";
 
 const SignUpIn = () => {
   return (
-    <Container className="padding">
+    <Container className="sign-up">
       <Row>
         <Col>
           <h5 className="font-bold text-center">Discover and read more</h5>
-          <Button className="text-center my-2 fb-button">
+          <Button className=" fb-button">
             <FaFacebookSquare className="mx-1 text-center" />
             Continue with Facebook
           </Button>
-          <Button className="text-center my-2  am-button">
+          <Button className=" am-button">
             <FaAmazon className="mx-1 text-center" /> Continue with Amazon
           </Button>
-          <Button outline className="text-center my-2 ap-button">
+          <Button outline className="ap-button">
             <FaApple className="mx-1 text-center" />
             Continue with Apple
           </Button>
-          <Button className="text-center my-2 em-button">
-            Sign up wtih E-mail
-          </Button>
-          <p className="font_small text-center m-1">
+          <Button className="em-button">Sign up wtih E-mail</Button>
+          <p className="text_small text-center m-1">
             By creating an account, you agree to the Goodreads Terms of Service
             and Privacy Policy.
           </p>

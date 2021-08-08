@@ -9,7 +9,7 @@ const BestBooks = () => {
         <Col lg="12" xs="12" md="12" sm="12">
           <h2>Goodreads Choice Awards: The Best Books 2020</h2>
         </Col>
-        <Col>
+        <Col className="mt-5">
           <img src={bestbooks} alt="best books" />
         </Col>
         <Col className="search-links">

@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 const QuoteBlock = () => {
   return (
     <div>
-      <div>
+      <div className="mt-5">
         <a href="/author/show/3565.Oscar_Wilde">
           <img
             alt="Oscar Wilde"
