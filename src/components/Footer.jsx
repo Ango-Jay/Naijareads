@@ -80,32 +80,28 @@ const Footer = () => {
             </IconContext.Provider>
           </Col>
           <Col xs="3" className="mr-auto">
-            <Container>
-              <Row>
-                <Col xs="6">
-                  {" "}
-                  <img
-                    role="button"
-                    className=" mx-2"
-                    src={google_play}
-                    alt="google_play"
-                  />
-                </Col>
-                <Col xs="6">
-                  <img
-                    role="button"
-                    className=" mx-2"
-                    src={apple_play}
-                    alt="apple_store"
-                  />
-                </Col>
+            <div>
+              <img
+                role="button"
+                className=" footer-btn "
+                src={google_play}
+                alt="google_play"
+              />
 
-                <p className="text-center">
-                  <FaRegCopyright className="mx-1" />
-                  2021 Goodreads, Inc. Desktop version
-                </p>
-              </Row>
-            </Container>
+              <img
+                role="button"
+                className=" footer-btn"
+                src={apple_play}
+                alt="apple_store"
+              />
+            </div>
+
+            <div>
+              <p className="text-center">
+                <FaRegCopyright className="mx-1" />
+                2021 Goodreads, Inc. Desktop version
+              </p>
+            </div>
           </Col>
         </Row>
       </Container>
